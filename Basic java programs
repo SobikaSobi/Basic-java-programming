@@ -1,0 +1,46 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter a first number:");
+        int a =sc.nextInt();
+        System.out.println("Enter a Second number:");
+        int b=sc.nextInt();
+        int temp=a;
+         a=b;
+         b=temp;
+        System.out.println(a +"Takes a number after swapping"+ b);
+    }
+} 
+
+2.import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter a first number:");//input:6578
+        int num =sc.nextInt();
+        int rev=0;
+        while(num!=0){
+            rev =rev*10+num%10;//output:8756
+            num=num/10;
+        }
+        
+        System.out.println(rev);
+    }
+}
+3.import java.util.Scanner;
+class Hello{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a String Which want to Reverse : ");
+        String str =sc.nextLine();
+        String rev =" ";
+        int length=str.length();
+        for(int i =length-1;i>=0;i--){
+            rev=rev+str.charAt(i);
+        }
+        System.out.println("Reversed String : "+rev);
+        
+        
+    }
+}
